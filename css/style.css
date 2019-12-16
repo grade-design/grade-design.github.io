@@ -11,7 +11,7 @@ body {
 }
 
 .jumbotron {
-   background-image: url(../img/header-bg.jpg);
+   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/header-bg.jpg);
    background-size: 100% 100%;
    background-position: 0 -100px;
    background-attachment: fixed;
@@ -44,6 +44,17 @@ body {
    text-shadow: 1px 1px 13px rgb(0, 0, 0);
 }
 
+.services {
+   margin-bottom: 50px;
+}
+/* .about {
+   background-color: #f8e5f3;
+} */
+.find {
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
 .about h4{
    color: #000000;
    text-shadow: 1px 1px 100px rgba(253, 0, 0, 0.3);
@@ -65,10 +76,10 @@ hr {
 }
 
 section {
-   min-height: 700px;
+   min-height: 400px;
 }
 
-.pKiri, .pKanan, p.Tengah {
+.pKiri, .pKanan {
    opacity: 0;
    transition: 1s;
 }
@@ -85,11 +96,6 @@ section {
    opacity: 1;
    transform: translate(0, 0) scale(1);
 }
-
-
-/* .portfolio {
-   background-color: rgba(2, 111, 158, 0.3);
-} */
 
 .portfolio .thumbnail {
    opacity: 0;
@@ -109,10 +115,6 @@ section {
 .row .col-sm-4 .thumbnail:hover {
    border: 1px solid #3b5999;
 }
-
-/* .find {
-   background-color: rgba(2, 111, 158, 0.3);
-} */
 
 
 /* Coba */
@@ -186,16 +188,6 @@ section {
    }
 }
 
-
-/* .pelayanan img {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
-   border: 2px solid #0077B5;
-   box-shadow: 1px 1px 13px rgba(0, 0, 0, .7);
-} */
-
 .tengah {
    display: block;
    margin-left: auto;
@@ -230,15 +222,11 @@ section {
 }
 /* Akhir WA */
 
-
-
-/* footer */
-
 footer {
    position: absolute;
    bottom: 0;
    width: 100%;
-   background-color: #3b5999;
+   background-color: rgb(5, 94, 143);
    padding: 30px;
 }
 
@@ -260,8 +248,8 @@ footer p a:hover {
 
 footer p i {
    color: salmon;
-}
-
+} 
+ 
 
 /* navbar */
 
@@ -276,21 +264,14 @@ footer p i {
 
 /* ---------------------------- */
 .navbarColor {
-   background-color: #3e72e2;
+   background-color: #0077B5;
    border: none;
+
 }
 
 .navbarColor .navbar-toggle {
    border: none;
    background-color: inherit;
-} 
-
-
-.instagramColor {
-   background-color: #e40303;
-} 
-.emailColor {
-   background-color: #f03cd8;
 } 
 
 .copyrightColor {
@@ -357,4 +338,52 @@ a .mid {
 
 .services-box:hover p {
    color: #fff;
+}
+
+.cont{
+   padding-top: 50px;
+   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url(../img/header-bg.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   color: #fff;
+}
+
+
+.cont .row{
+   padding: 30px 0;
+   font-size: 22px;
+}
+
+.cont .col-md-4 .fa {
+   padding: 10px;
+   font-size: 40px;
+}
+
+.cont .btn {
+   padding: 10px 25px 10px 25px;
+   margin: 5px;
+   border-radius: 30px;
+   border: 2px solid #fff;
+   background: transparent;
+   color: #fff;
+}
+
+.cont .btn:focus {
+   box-shadow: none !important;
+}
+
+.cont .btn:hover {
+   border: 2px solid #000 !important;
+   background: #000 !important;
+   transition: 0.6s;
+   color: #fff;
+}
+
+.cont .btn .fa {
+   margin-right: 10px;
+}
+
+.cont a {
+   color: #fff
 }
